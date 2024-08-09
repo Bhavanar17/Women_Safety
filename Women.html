@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Safety Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Women's Safety Application</h1>
+    </header>
+
+    <main>
+        <section id="form-section">
+            <h2>Report an Incident</h2>
+            <form id="safety-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+
+                <label for="details">Details:</label>
+                <textarea id="details" name="details" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="map-section">
+            <h2>Safe Locations</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
